@@ -26,6 +26,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  padding: 0 1.4rem;
 }
 .score {
   display: flex;
@@ -62,4 +63,25 @@ header {
   align-items: center;
   font-weight: bold;
   font-size: 1.5rem;
+}
+.play-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.rock-play,
+.scissors-play,
+.paper-play {
+  text-align: center;
+  background-color: white;
+  padding: 1.7rem 4rem;
+  border-radius: 1rem;
+}
+.hand {
+  font-size: 2.8rem;
+}
+button {
+  outline: none;
+  border: none;
 }
