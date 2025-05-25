@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --primary-font: "Press Start 2P", system-ui;
+  --background-color: #9ec92d;
+  --score-background-color: #f2c244;
+  --general-color: #000000;
+}
+
+body {
+  font-size: 1.35rem;
+  font-family: var(--primary-font);
+}
+.parent {
+  background-color: var(--background-color);
+  margin: 0 auto;
+  width: 50%;
+  padding: 4px 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.4rem;
+}
+.score {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.name {
+  font-size: 1.6rem;
+}
+.hero-section {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dashed-selected {
+  border: 2px dashed var(--general-color);
+  padding: 1rem;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+.figure-hand {
+  font-size: 5rem;
+  padding: 2rem;
+}
+.secondary-color {
+  background-color: var(--score-background-color);
+  width: 100%;
+  height: 5rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.play-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.rock-play,
+.scissors-play,
+.paper-play {
+  text-align: center;
+  background-color: white;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+}
+.hand-scissors,
+.hand-paper,
+.hand-rock {
+  font-size: 2.8rem;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}

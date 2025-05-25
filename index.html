@@ -4,8 +4,68 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Rock Papar Scissors</title>
   </head>
-  <body></body>
+  <body>
+    <div class="parent">
+      <header>
+        <div class="year-name">
+          <div>
+            &copy; 2024
+            <a href="https://www.linkedin.com/in/anthony-muuo/" target="_blank"
+              >Anthony Muuo</a
+            >
+          </div>
+        </div>
+        <div class="score">
+          <div>
+            <p>computer <span id="computer-score-play">0</span></p>
+          </div>
+          <div>
+            <p><span id="player-score-play">0</span> Player</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- hero section  -->
+      <div class="hero-section">
+        <div class="computer-hero">
+          <p class="name">Computer</p>
+          <div class="dashed-selected">
+            <div class="figure-hand" id="hand-computer">✌️</div>
+          </div>
+        </div>
+        <div class="secondary-color" id="score-result">CURRENTLY DRAW</div>
+        <div class="human-hero">
+          <p class="name">Player</p>
+          <div class="dashed-selected">
+            <div class="figure-hand" id="hand-player">✌️</div>
+          </div>
+        </div>
+      </div>
+      <!-- final section -->
+      <div class="play-game">
+        <div class="rock-play">
+          <button class="hand-rock">✊</button>
+          <div>Rock</div>
+        </div>
+        <div class="paper-play">
+          <button class="hand-paper">✋</button>
+          <div>Paper</div>
+        </div>
+        <div class="scissors-play">
+          <button class="hand-scissors">✌️</button>
+          <div>Scissors</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
 </html>
