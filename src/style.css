@@ -75,13 +75,16 @@ header {
 .paper-play {
   text-align: center;
   background-color: white;
-  padding: 1.7rem 4rem;
+  padding: 2rem 2rem;
   border-radius: 1rem;
 }
-.hand {
+.hand-scissors,
+.hand-paper,
+.hand-rock {
   font-size: 2.8rem;
 }
 button {
   outline: none;
   border: none;
+  background-color: transparent;
 }

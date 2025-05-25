@@ -26,10 +26,10 @@
         </div>
         <div class="score">
           <div>
-            <p>computer <span>2</span></p>
+            <p>computer <span id="computer-score-play">0</span></p>
           </div>
           <div>
-            <p>4 <span>player</span></p>
+            <p><span id="player-score-play">0</span> Player</p>
           </div>
         </div>
       </header>
@@ -39,32 +39,33 @@
         <div class="computer-hero">
           <p class="name">Computer</p>
           <div class="dashed-selected">
-            <div class="figure-hand">✊</div>
+            <div class="figure-hand" id="hand-computer">✌️</div>
           </div>
         </div>
-        <div class="secondary-color">CURRENTLY DRAW</div>
+        <div class="secondary-color" id="score-result">CURRENTLY DRAW</div>
         <div class="human-hero">
           <p class="name">Player</p>
           <div class="dashed-selected">
-            <div class="figure-hand">✋</div>
+            <div class="figure-hand" id="hand-player">✌️</div>
           </div>
         </div>
       </div>
       <!-- final section -->
       <div class="play-game">
-        <button class="rock-play">
-          <div class="hand">✊</div>
+        <div class="rock-play">
+          <button class="hand-rock">✊</button>
           <div>Rock</div>
-        </button>
-        <button class="paper-play">
-          <div class="hand">✋</div>
+        </div>
+        <div class="paper-play">
+          <button class="hand-paper">✋</button>
           <div>Paper</div>
-        </button>
-        <button class="scissors-play" type="button">
-          <div class="hand">✌️</div>
+        </div>
+        <div class="scissors-play">
+          <button class="hand-scissors">✌️</button>
           <div>Scissors</div>
-        </button>
+        </div>
       </div>
     </div>
   </body>
+  <script src="src/index.js"></script>
 </html>
