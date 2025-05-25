@@ -94,7 +94,7 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
-@media (max-width: 614px) {
+@media (max-width: 38.3125em) {
   html {
     font-size: 55%;
   }
