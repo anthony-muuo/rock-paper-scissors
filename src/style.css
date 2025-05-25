@@ -77,6 +77,7 @@ header {
   background-color: white;
   padding: 2rem 2rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .hand-scissors,
 .hand-paper,
@@ -87,4 +88,5 @@ button {
   outline: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
