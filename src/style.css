@@ -5,6 +5,7 @@
 }
 html {
   font-size: 62.5%;
+  height: 100vh;
 }
 :root {
   --primary-font: "Press Start 2P", system-ui;
@@ -16,17 +17,19 @@ html {
 body {
   font-size: 1.35rem;
   font-family: var(--primary-font);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
 }
 .parent {
   background-color: var(--background-color);
-  margin: 0 auto;
-  width: 50%;
-  padding: 4px 0;
+  min-height: 100vh;
 }
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0 1.4rem;
+  padding: 0.6rem 1.4rem;
+  gap: 4rem;
 }
 .score {
   display: flex;
@@ -69,6 +72,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 4rem;
+  margin: 1rem;
 }
 .rock-play,
 .scissors-play,
@@ -77,6 +81,7 @@ header {
   background-color: white;
   padding: 2rem 2rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .hand-scissors,
 .hand-paper,
@@ -87,4 +92,38 @@ button {
   outline: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+@media (max-width: 614px) {
+  html {
+    font-size: 55%;
+  }
+
+  .score {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .play-game {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .rock-play,
+  .paper-play,
+  .scissors-play {
+    padding: 1rem;
+  }
+
+  .figure-hand {
+    font-size: 4rem;
+    padding: 1rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.6rem 1.4rem;
+  }
 }

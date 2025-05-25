@@ -18,25 +18,20 @@ function playGame(playerChoice, computerChoice) {
     (playerChoice === "✌️" && computerChoice === "✌️") ||
     (playerChoice === "✋" && computerChoice === "✋")
   ) {
-    console.log("this is a tie");
     scoreUpdate.textContent = "CURRENTLY DRAW";
   } else if (playerChoice === "✊" && computerChoice === "✌️") {
-    console.log("player wins wit rock and comp chooses scissors");
     playerScore++;
     playerScorePlay.textContent = playerScore;
     scoreUpdate.textContent = "PLAYER WINS";
   } else if (playerChoice === "✌️" && computerChoice === "✋") {
-    console.log("player winsssss with scissors on computer is paper");
     playerScore++;
     playerScorePlay.textContent = playerScore;
     scoreUpdate.textContent = "PLAYER WINS";
   } else if (playerChoice === "✋" && computerChoice === "✊") {
-    console.log("player wins with paper and comp chooses rock");
     playerScore++;
     playerScorePlay.textContent = playerScore;
     scoreUpdate.textContent = "PLAYER WINS";
   } else {
-    console.log("computer wins");
     computerScore++;
     computerScorePlay.textContent = computerScore;
     scoreUpdate.textContent = "COMPUTER WINS";
@@ -51,7 +46,6 @@ function computerChoices() {
 
 function handlePlayed(choice) {
   playGame(choice, computerChoices());
-  console.log(choice);
 }
 
 rockPlayed.addEventListener("click", () => handlePlayed("✊"));
