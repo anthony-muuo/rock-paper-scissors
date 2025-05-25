@@ -19,9 +19,11 @@ body {
   font-family: var(--primary-font);
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 .parent {
   background-color: var(--background-color);
+  min-height: 100vh;
 }
 header {
   display: flex;
@@ -91,4 +93,37 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+@media (max-width: 614px) {
+  html {
+    font-size: 55%;
+  }
+
+  .score {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .play-game {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .rock-play,
+  .paper-play,
+  .scissors-play {
+    padding: 1rem;
+  }
+
+  .figure-hand {
+    font-size: 4rem;
+    padding: 1rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.6rem 1.4rem;
+  }
 }
